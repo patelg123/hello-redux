@@ -1,13 +1,11 @@
-import React, { Component } from "react";
-import HelloWorld from "./HelloWorld";
+import React from "react";
+import GetTechnology from "./components/containers/GetTechnology";
 
-class App extends Component {
-  state = {
-    tech: "React"
-  };
-  render() {
-    return <HelloWorld tech={this.state.tech} />;
-  }
-}
+
+const App = () => (
+  <div>
+    <GetTechnology />
+  </div>
+);
 
 export default App;

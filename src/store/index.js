@@ -1,4 +1,6 @@
 import { createStore } from 'redux';
 import rootReducer from '../reducers';
 
-export const store = createStore(rootReducer);
+
+const initialState = { tech: "JS" };
+export const store = createStore(rootReducer, initialState);
